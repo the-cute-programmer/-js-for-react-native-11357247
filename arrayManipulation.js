@@ -11,7 +11,30 @@ function processArray(array) {
     return output;
 }
 
-output = [1, 2, 5, 7, 8, 9, 10, 6];
+output = [1, 2, 5, 7, 8, 6];
 let results = processArray(output);
 
 console.log(results);
+
+
+function formatArrayStrings(strings, results){ //results stores array of numbers passed to processArray function
+    if (strings.length !== results.length){
+        throw new Error("The length of this array of strings is not the same as the length of the array of numbers")
+    };
+
+    let stringsOutput = [];
+    for (i =0; i < strings.length; i++){
+        if (results[i] % 2 === 0){
+            stringsOutput.push(strings[i].toUpperCase());
+        }
+        else{
+            stringsOutput.push(strings[i].toLowerCase());
+        }
+    }
+    return stringsOutput;
+}
+
+let stringsOutput = ["Dede", "is", "a", "very", "smart", "lady"];
+let formattedStrings = formatArrayStrings(stringsOutput, results);
+
+console.log(formattedStrings);
