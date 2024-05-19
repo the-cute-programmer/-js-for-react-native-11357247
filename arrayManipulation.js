@@ -34,7 +34,9 @@ function formatArrayStrings(strings, results){ //results stores array of numbers
     return stringsOutput;
 }
 
-let stringsOutput = ["Dede", "is", "a", "very", "smart", "lady"];
+let stringsOutput = ["Dede", "Karren", "Hillary", "Sefa", "Matilda", "Lorraine"];
 let formattedStrings = formatArrayStrings(stringsOutput, results);
 
 console.log(formattedStrings);
+
+module.exports = { processArray, formatArrayStrings};
