@@ -2,7 +2,7 @@
 
 ## Student ID: 11357247
 
-### Descriptions
+### Description
 
 #### Task 1
 - **File:** `arrayManipulation.js`
